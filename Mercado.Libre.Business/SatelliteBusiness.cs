@@ -3,11 +3,22 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Mercado.Libre.Business.Data;
 
 namespace Mercado.Libre.Business
 {
     public class SatelliteBusiness : ISatelliteBusiness
     {
+        private readonly ISatelliteData SatelliteData;
+        public SatelliteBusiness(ISatelliteData satelliteData)
+        {
+            SatelliteData = satelliteData ?? throw new ArgumentNullException(nameof(satelliteData));
+        }
+        public SatelliteDto Create(SatelliteDto satelliteDto)
+        {
+            return SatelliteData.Create(satelliteDto);
+        }
+
         public ResponseTopSecretDto TopSecret(RequestTopSecretDto requestTopSecretDto)
         {
             ResponseTopSecretDto responseTopSecretDto = new ResponseTopSecretDto();
@@ -17,6 +28,14 @@ namespace Mercado.Libre.Business
             return responseTopSecretDto;
 
         }
+
+        public ResponseTopSecretDto TopSecret()
+        {
+            ResponseTopSecretDto responseTopSecretDto = new ResponseTopSecretDto();
+            ICollection<SatelliteDto> sas = SatelliteData.GetAll();
+            return responseTopSecretDto;
+        }
+
         private PositionDto GetLocation(ICollection<decimal> messages)
         {
             return new PositionDto() { X = 0, Y = 0 };

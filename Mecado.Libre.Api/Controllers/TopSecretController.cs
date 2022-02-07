@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Mecado.Libre.Api.Controllers
 {
-    public class SatelliteController : BaseController
+    public class TopSecretController : BaseController
     {
         private readonly ISatelliteBusiness SateliteBusiness;
 
-        public SatelliteController(
+        public TopSecretController(
             ISatelliteBusiness sateliteBusiness
             )
         {
@@ -18,7 +18,7 @@ namespace Mecado.Libre.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> topsecret(RequestTopSecretDto requestTopSecretDto)
+        public async Task<ActionResult> Post(RequestTopSecretDto requestTopSecretDto)
         {
             return await ResponseService<ResponseTopSecretDto>(SateliteBusiness.TopSecret(requestTopSecretDto));
         }

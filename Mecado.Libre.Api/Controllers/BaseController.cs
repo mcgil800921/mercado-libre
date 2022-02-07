@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Mecado.Libre.Api.Controllers
 {
-    [Route("[controller]/[action]")]
+    [Route("[controller]")]
     [ApiController]
     public class BaseController : ControllerBase
     {

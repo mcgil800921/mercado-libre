@@ -4,6 +4,6 @@ namespace Mercado.Libre.Business.Dtos
 {
     public class RequestTopSecretDto
     {
-        public ICollection<SatelliteDto> Satellites { get; set; }
+        public ICollection<SatelliteAvancedDto> Satellites { get; set; }
     }
 }
