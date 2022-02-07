@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mecado.Libre.Api", "Mecado.Libre.Api\Mecado.Libre.Api.csproj", "{5F2FD853-A97F-4B4D-AB93-1E54C45C36A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mercado.Libre.Business", "Mercado.Libre.Business\Mercado.Libre.Business.csproj", "{1C220715-1D35-41FA-BD26-EA51F136FF5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F2FD853-A97F-4B4D-AB93-1E54C45C36A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2FD853-A97F-4B4D-AB93-1E54C45C36A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2FD853-A97F-4B4D-AB93-1E54C45C36A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2FD853-A97F-4B4D-AB93-1E54C45C36A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C220715-1D35-41FA-BD26-EA51F136FF5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C220715-1D35-41FA-BD26-EA51F136FF5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C220715-1D35-41FA-BD26-EA51F136FF5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C220715-1D35-41FA-BD26-EA51F136FF5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24A9FF25-1DD4-4B3A-8EDB-F0FB648D263F}
+	EndGlobalSection
+EndGlobal
